@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>opacity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>opacity</title>
 <style>
 *{
     padding: 0;
@@ -49,7 +49,7 @@ body{
     display:flex;
     flex-direction:column;
  
-      background-color:#FBE251;
+      background-color:#C1BD8E;
              flex: initial;
   max-width: 860px;
       
@@ -58,18 +58,19 @@ body{
 
 }
 .Title{
-    border:1.5px #FBE251 solid;
+    border:1.5px #C1BD8E solid;
     border-radius:50px;
     padding:2px 25px;
     margin-top:10px;
     margin-bottom:10px;
     margin-right:auto;
     margin-left:auto;
-    color: #FBE251;
+    color: #C1BD8E;
     text-align:center;
     
 }
 .TitleB{
+    
     border:1.5px #0C4842 solid;
     border-radius:50px;
     padding:2px 25px;
@@ -102,13 +103,13 @@ body{
 }
 .Gtext{
     font-family: 'Noto Sans TC, sans-serif';
-    font-weight:100;
+    font-weight:300;
     margin-top:10px;
     margin-bottom:10px;
     margin-right:auto;
     margin-left:auto;
     color: #0C4842;
-    text-align:center;
+
 
 }
 .Top{
@@ -123,34 +124,40 @@ body{
   background-color:#0C4842;
 }
 .demoRL{
-    display:flex;
+/*    display:flex;*/
         flex-direction:row;
     flex: 2;
   padding: 0 25px;
   background-color:#0C4842;
 }
 .demoR{
+/*
     display:flex;
     flex: 1;
+*/
   margin: 10px;
-    flex-direction:column ;
-    border:1.5px #FBE251 solid;
-    
+/*    flex-direction:column ;*/
+    border:1.5px #C1BD8E solid;
+    display: inline-block;
+    min-width: 300px;
   background-color:#345f30;
 }
 .demoL{
+/*
    display:flex;
     flex: 1;
+*/
   margin: 10px;
-    flex-direction:column ;
-    border:1.5px #FBE251 solid;
-    
+/*    flex-direction:column ;*/
+    border:1.5px #C1BD8E solid;
+    min-width: 300px;
+    display: inline-block;
   background-color:#345f30;
 }
 .demoA{
  
    
-  background-color:#FBE251;
+  background-color:#C1BD8E;
 }
 .demoB{
 
@@ -164,20 +171,20 @@ body{
 
         margin-bottom: 20px;
 height: 30vh;
-  background-color:#FBE251;
+  background-color:#C1BD8E;
 
 } 
 .Map{
   display:flex;
   flex: 1;
     padding:0 25px;
-  background-color:#FBE251;
+  background-color:#C1BD8E;
 }
 .MapDoc{
   display:flex;
   flex: 1;
   padding: 25px;
-  background-color:#FBE251;
+  background-color:#C1BD8E;
 }
 .About{
   display:flex;
@@ -199,6 +206,8 @@ height: 30vh;
   display:flex;
   flex: 9;
   padding: 25px;
+ flex-direction:column;
+ text-align-last: left;
   background-color:#0C4842;
 }
 .next{
@@ -215,7 +224,7 @@ height: 30vh;
 .next{
   display:flex;
   flex: 1;
-  background-color:#FBE251;
+  background-color:#C1BD8E;
 }
 .demo p{
     color: #FFFFFF;
@@ -227,7 +236,12 @@ height: 30vh;
     border:1px solid #000;
     vertical-align: middle;
 }
-
+.abouttext{
+    color: #C1BD8E;
+    line-height: 1.5;
+    text-align-last: left;
+    
+}
 </style>
 </head>
     
@@ -276,22 +290,34 @@ height: 30vh;
         <p class="TitleB">標題</p>
     <div class="demoMap">
         <div class="Map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7281.13861073256!2d120.67014525471622!3d24.151759088254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d7177443f9f%3A0xce921e1dcbe35ca4!2z5bCP5ryB5YWS54eS6YWS6Zue5bqX!5e0!3m2!1szh-TW!2stw!4v1533718925711"   frameborder="0" style="border:0" allowfullscreen width=100% ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.1332614972625!2d120.6542697490482!3d24.131957753699634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dae6fbba96f%3A0xaa259640c9e85755!2zNDAy5Y-w5Lit5biC5Y2X5Y2A5bSH5YCr5YyX6KGXNzPlt7cxMeiZnw!5e0!3m2!1szh-TW!2stw!4v1533736521984" frameborder="0" style="border:0" allowfullscreen width=100% ></iframe>
         </div>
-        <div class="MapDoc">
-            <p class="Gtext">背景透明MAPDOC文字也透明</p>
+        <div class="MapDoc" >
+            <div style="flex-direction: column">
+            <p class="Gtext">台中市南區崇倫北街73巷11號</p>
+            <p class="Gtext">幔尼設計事務所</p>
+            </div>
+        </div>
         </div>
     </div>
-    </div>
+    
     
     <div class="Container">
         <p class="Title">標題</p>
     <div class="About">
         <div class="AboutImg">
-            <img src="./img/aboutimg.png" alt="Stickman" width="200" height="200">
+            <img src="./img/man_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png" alt="Stickman" width="200" height="200">
         </div>
         <div class="AboutDoc">
-            <p class="demotext">背景透明，AboutDOC文字也透明</p>
+            <div style="display: flex; flex-direction:row;margin: 0 20px">
+            <h2 style="color: aliceblue; margin: 0 10px" >蘇聲培</h2>
+            <h6  class="abouttext" style="align-self: flex-end;line-height: 1.8123">老師</h6>
+            </div>
+            <div style="padding: 30px ">
+            <h6 class="abouttext">不二講堂/覺知途徑課程 創辦人。</h6>
+            <h6 class="abouttext">超過20年的探索歷程，看見了悟內在心靈的【覺知途徑】。</h6>
+            <h6 class="abouttext">熱情的透過不同方式，分享他的經驗。</h6>
+            </div>
         </div>
     </div>
     </div>
@@ -301,6 +327,8 @@ height: 30vh;
         <h1 class="Gtext">背景透明NEXT文字也透明</h1>
     </div>
     </div>
+        
+        </div>
     <div class="down">
         <p class="demotext">背景透明DOWN文字也透明</p>
     </div>
